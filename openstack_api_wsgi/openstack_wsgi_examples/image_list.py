@@ -5,9 +5,9 @@ import logging
 import novaclient
 from novaclient.v1_1 import client 
 
-# enable debug logging 
+# enable debug logging of http request/response
 logger = logging.getLogger('novaclient.client')
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 debug_stream = logging.StreamHandler()
 logger.addHandler(debug_stream)
 

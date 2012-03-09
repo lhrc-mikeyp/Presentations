@@ -14,6 +14,7 @@ def application(request):
 
     return Response('Hello, Secret World of WebOb !')
 
+
 @wsgify.middleware
 def auth_filter(request, app):
 
@@ -21,11 +22,14 @@ def auth_filter(request, app):
         return exc.HTTPForbidden()
     return app(request)
 
+
 def app_factory(global_config, **local_config):
     return application
 
+
 def filter_factory(global_config, **local_config):
     return auth_filter
+
 
 wsgi_app = loadapp('config:' + INI_PATH)
 

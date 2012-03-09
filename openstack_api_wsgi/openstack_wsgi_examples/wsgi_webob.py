@@ -17,6 +17,7 @@ def application(request):
 def app_factory(global_config, **local_config):
     return application
 
+
 wsgi_app = loadapp('config:' + INI_PATH)
 
 httpserver.serve(wsgi_app, host='127.0.0.1', port=8080)
