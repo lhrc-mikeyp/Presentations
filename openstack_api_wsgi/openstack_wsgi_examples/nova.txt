@@ -1,0 +1,56 @@
+
+(.venv)mikeyp@blade1:devstack$ nova image-list 
++--------------------------------------+--------------------------------------------+--------+--------+
+|                  ID                  |                    Name                    | Status | Server |
++--------------------------------------+--------------------------------------------+--------+--------+
+| 43bafe10-700c-45af-90a8-b5d794812e62 | cirros-0.3.0-x86_64-blank-ramdisk          | ACTIVE |        |
+| 45ad4046-9780-4968-83c6-460f168321c7 | cirros-0.3.0-x86_64-blank-kernel           | ACTIVE |        |
+| 6216fc7c-7f87-45e0-be0f-eefef2d5be33 | ttylinux-uec-amd64-11.2_2.6.35-15_1        | ACTIVE |        |
+| 92a1e0bd-c4a5-4f3f-a66f-1f8b990f2b0e | ttylinux-uec-amd64-11.2_2.6.35-15_1-kernel | ACTIVE |        |
+| 95d8db11-b175-43d2-b3de-d7b806e54dde | cirros-0.3.0-x86_64-blank                  | ACTIVE |        |
+| e543bb77-5a7d-4ef0-9a7a-92ca6c8a0b35 | cirros-0.3.0-x86_64-rootfs                 | ACTIVE |        |
++--------------------------------------+--------------------------------------------+--------+--------+
+(.venv)mikeyp@blade1:devstack$ 
+(.venv)mikeyp@blade1:devstack$ 
+(.venv)mikeyp@blade1:devstack$ 
+(.venv)mikeyp@blade1:devstack$ 
+(.venv)mikeyp@blade1:devstack$ nova flavor list 
+usage: nova [--debug] [--username USERNAME] [--password PASSWORD]
+            [--tenant_name TENANT_NAME] [--auth_url AUTH_URL]
+            [--region_name REGION_NAME] [--service_type SERVICE_TYPE]
+            [--service_name SERVICE_NAME] [--endpoint_type ENDPOINT_TYPE]
+            [--version VERSION]
+            <subcommand> ...
+error: argument <subcommand>: invalid choice: 'flavor'
+Try `nova' for more information.
+(.venv)mikeyp@blade1:devstack$ nova flavor-list 
++----+-----------+-----------+------+-----------+------+-------+-------------+
+| ID |    Name   | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor |
++----+-----------+-----------+------+-----------+------+-------+-------------+
+| 1  | m1.tiny   | 512       | 0    | 0         |      | 1     | 1.0         |
+| 2  | m1.small  | 2048      | 10   | 20        |      | 1     | 1.0         |
+| 3  | m1.medium | 4096      | 10   | 40        |      | 2     | 1.0         |
+| 4  | m1.large  | 8192      | 10   | 80        |      | 4     | 1.0         |
+| 5  | m1.xlarge | 16384     | 10   | 160       |      | 8     | 1.0         |
++----+-----------+-----------+------+-----------+------+-------+-------------+
+(.venv)mikeyp@blade1:devstack$ nova --username admin --password devstack image list 
+usage: nova [--debug] [--username USERNAME] [--password PASSWORD]
+            [--tenant_name TENANT_NAME] [--auth_url AUTH_URL]
+            [--region_name REGION_NAME] [--service_type SERVICE_TYPE]
+            [--service_name SERVICE_NAME] [--endpoint_type ENDPOINT_TYPE]
+            [--version VERSION]
+            <subcommand> ...
+error: argument <subcommand>: invalid choice: 'image'
+Try `nova' for more information.
+(.venv)mikeyp@blade1:devstack$ nova --username admin --password devstack image-list 
++--------------------------------------+--------------------------------------------+--------+--------+
+|                  ID                  |                    Name                    | Status | Server |
++--------------------------------------+--------------------------------------------+--------+--------+
+| 43bafe10-700c-45af-90a8-b5d794812e62 | cirros-0.3.0-x86_64-blank-ramdisk          | ACTIVE |        |
+| 45ad4046-9780-4968-83c6-460f168321c7 | cirros-0.3.0-x86_64-blank-kernel           | ACTIVE |        |
+| 6216fc7c-7f87-45e0-be0f-eefef2d5be33 | ttylinux-uec-amd64-11.2_2.6.35-15_1        | ACTIVE |        |
+| 92a1e0bd-c4a5-4f3f-a66f-1f8b990f2b0e | ttylinux-uec-amd64-11.2_2.6.35-15_1-kernel | ACTIVE |        |
+| 95d8db11-b175-43d2-b3de-d7b806e54dde | cirros-0.3.0-x86_64-blank                  | ACTIVE |        |
+| e543bb77-5a7d-4ef0-9a7a-92ca6c8a0b35 | cirros-0.3.0-x86_64-rootfs                 | ACTIVE |        |
++--------------------------------------+--------------------------------------------+--------+--------+
+
