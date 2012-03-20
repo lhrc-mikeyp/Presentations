@@ -33,7 +33,7 @@ def get_keystone_token():
 
     service_list = response_data['access']['serviceCatalog']
     for s in service_list:
-        if s['type'] == 'compute' and s['name'] == "'Compute Service'":
+        if s['type'] == 'compute' and s['name'] == 'Compute Service':
             break
     nova_url = s['endpoints'][0]['publicURL']
     return (token, nova_url)
