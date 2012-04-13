@@ -70,10 +70,10 @@ You know enough restructured text to
     http://docutils.sourceforge.net/docs/user/slide-shows.html
 
     you will need `docutils`_ installed to generate the slides
-    .. _`docutils` : http://docutils.sourceforge.net/index.html
 
+.. _`docutils` : http://docutils.sourceforge.net/index.html
 
-.. image:: images/blk_fade.gif
+.. image:: images/horizontal_bar.png
    :class: handout
 
 Example of embedding an image
@@ -91,7 +91,7 @@ Example of embedding an image
     - All the services (will eventually) authenticate with Keystone
     - Thanks to `Ken Pepple`_ for the image and text.
     
-.. _`Ken Pepple` : `http://ken.pepple.info/openstack/2012/02/21/revisit-openstack-architecture-diablo/
+.. _`Ken Pepple` : http://ken.pepple.info/openstack/2012/02/21/revisit-openstack-architecture-diablo/
 
 .. container:: handout
 
