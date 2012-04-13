@@ -1,0 +1,207 @@
+.. include:: <s5defs.txt>
+
+===============================================================================
+A Great Folsom Summit Presentation
+===============================================================================
+
+.. class:: center
+
+    OpenStack Folsom Design Summit
+
+    John Q. Presenter
+    :small:`someone@example.com`
+
+.. class:: tiny 
+
+.. class:: tiny slide-display outline
+
+(press <t> to toggle a printable handouts view)
+
+.. container:: handout
+
+    This is a an awesome OpenStack Summit Presentation 
+    for OpenStack Developers 
+    
+.. contents::
+   :class: handout
+
+.. |bullet| unicode:: U+02022
+.. footer:: |bullet| 16 April, 2012
+
+
+Topics
+-------
+
+OpenStack
+
+More OpenStack
+
+Python
+
+More Python
+
+OpenStack Awesomeness
+
+.. container:: handout
+
+    Whatever you add here will appear in the printable handouts
+    Make sure it's tabbed in for docutils karma. 
+    
+.. this next line is a print separator for the handouts
+.. just put it at the end of each slide
+.. image:: images/horizontal_bar.png
+   :class: handout
+
+Assumptions
+-------------------------------------------------------------------------------
+
+You know enough restructured text to
+
+    create paragraphs
+
+    create headers
+
+    copy comments
+
+
+.. container:: handout
+
+    For more details see 
+    http://docutils.sourceforge.net/docs/user/slide-shows.html
+
+    you will need `docutils`_ installed to generate the slides
+    .. _`docutils` : http://docutils.sourceforge.net/index.html
+
+
+.. image:: images/blk_fade.gif
+   :class: handout
+
+Example of embedding an image
+-------------------------------------------------------------------------------
+
+.. image:: images/nova-concept-int-essex.jpg 
+    :alt: Nova Block Diagram
+    :align: right
+
+.. class:: small
+
+    - Horizon provides a web front end to the other OpenStack services
+    - Nova stores and retrieves virtual disks ("images") and associated metadata in Glance
+    - Glance can store the actual virtual disk files in Swift
+    - All the services (will eventually) authenticate with Keystone
+    - Thanks to `Ken Pepple`_ for the image and text.
+    
+.. _`Ken Pepple` : `http://ken.pepple.info/openstack/2012/02/21/revisit-openstack-architecture-diablo/
+
+.. container:: handout
+
+    Etiam sollicitudin augue id ipsum. Nam a tellus. Duis nec massa ut metus
+    lobortis rhoncus. Suspendisse lacus. Nunc rutrum, sem vel fringilla egestas,
+    sapien nunc dignissim tortor, eu tempor ipsum nibh non enim. Nulla facilisi.
+    Morbi a nulla. Ut commodo facilisis erat. Nullam eleifend. Nam hendrerit massa
+    accumsan mauris. Donec quis justo. Aliquam ut felis. Nunc consequat nisi quis
+    purus. Nunc nibh leo, pretium a, sollicitudin interdum, pulvinar eu, enim.
+
+    Integer commodo ante. Integer sit amet elit ac felis gravida tempor. Vivamus
+    quam sapien, eleifend quis, blandit eu, rhoncus ut, tortor. Nulla non dui eget
+    enim mattis tristique. Nullam lacinia viverra ligula. Donec quis elit. Morbi
+    non sem non metus fringilla aliquam. Etiam molestie, sapien vel adipiscing
+    luctus, sem nisi scelerisque eros, at accumsan erat nulla quis sem.
+    Pellentesque erat. Cras augue. Donec eu lacus vel lacus viverra commodo. Fusce
+    posuere laoreet lectus. Integer imperdiet, tortor non aliquam bibendum, dui
+    justo semper mi, eu ullamcorper dui nunc eu tortor.
+
+    Donec varius. Quisque bibendum pulvinar neque. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Cras varius lectus nec est. Nullam mollis justo
+    non lorem. Aenean pulvinar convallis lorem. Nunc pede dui, dignissim ac,
+    venenatis sit amet, facilisis dignissim, massa. Donec tristique, nunc a
+    ultricies eleifend, nunc mauris commodo magna, et sodales odio nibh eget enim.
+    Nullam est eros, convallis ut, auctor eu, posuere sed, lectus. Donec
+    pellentesque orci eget diam. Aenean nunc sem, sodales non, commodo a, interdum
+    nec, ipsum. Vestibulum sem.
+
+    you get the idea now....
+
+.. image:: images/horizontal_bar.png
+   :class: handout
+
+Code Example
+-------------------------------------------------------------------------------
+
+you can embed code as well
+
+::
+
+    import this
+
+or multiple lines
+
+::
+
+    from __future__ import print_function
+    from __future__ import unicode_literals
+
+.. container:: handout
+
+    handout only notes
+
+.. image:: images/horizontal_bar.png
+   :class: handout
+
+Including Code from files
+-------------------------------------------------------------------------------
+
+Use the ``include::`` directive, but remember long examples might not fit.
+
+.. include:: ./examples/image_list.py
+   :literal:
+
+.. container:: handout
+
+    Include works in handouts as well - much better for longer examples ! 
+
+    .. include:: ./examples/image_list.py
+       :literal:
+
+.. image:: images/horizontal_bar.png
+   :class: handout
+
+
+Including tables
+-------------------------------------------------------------------------------
+
+Tables and most other restructured text markup works
+
+.. class:: borderless 
+
+    +------------------+--------------------+
+    +   Header         +    Header          +
+    +------------------+--------------------+
+    +  Content         +   Content          +
+    +------------------+--------------------+
+    +  Content         +   Content          +
+    +------------------+--------------------+
+    +  Content         +   Content          +
+    +------------------+--------------------+
+    +  Content         +   Content          +
+    +------------------+--------------------+
+    +  Content         +   Content          +
+    +------------------+--------------------+
+    +  Content         +   Content          +
+    +------------------+--------------------+
+
+.. image:: images/horizontal_bar.png
+   :class: handout
+
+References and Links
+-------------------------------------------------------------------------------
+
+All links will appear in the printed version of the handouts.
+
+.. topic:: Links
+   :class: hidden print
+
+   .. target-notes:: :class: hidden print
+
+.. image:: images/horizontal_bar.png
+   :class: handout

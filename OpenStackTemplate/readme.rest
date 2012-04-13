@@ -1,0 +1,36 @@
+Summary
+========
+
+This is a simple OpenStack themed docutils / S5 presentation template for use with
+the rst2s5 utility included in `docutils tools`_ 
+
+Quick Start
+===========
+
+#. You will need to install the Python `docutils`_ package if it's not already installed.
+#. download or git clone the template files 
+#. cd into the OpenStackTemplate directory
+#. create an initial presentation by running ``rst2s5.py  --theme-url=./ui/openstack presentation.rest > presentation.html``
+#. Open the presentation.html file in your web browser and test it out. 
+#. Navigation is in the lower right hand corner, and t toggles between slide and handout views.
+#. If you like what you see, then edit presentation.rest to include the content of your slides and re-run rst2s5 to generate the updated slides.
+
+Tips
+====
+
+S5 works in Firefox, and should work is all other browsers- just
+verify with your specific browser.
+
+Be careful with the rst2s5 command, or you might overwrite your
+original .rest source file.  I usually keymap the command to make
+things easier.
+
+Remember to test in full screen mode - the fonts are autosized,
+and sometimes window resizes confuse the s5 Javascript. A reload
+of the page usually fixes this.
+
+You can generate printed handouts by hitting t, and then printing
+directly from the browser.
+
+.. _`docutils` : http://pypi.python.org/pypi/docutils/
+.. _`docutils tools` : http://docutils.sourceforge.net/docs/user/tools.html
